@@ -30,3 +30,6 @@ require("copilot").setup({
 
 --Set Telescope Live Grepping
 vim.api.nvim_set_keymap("n", "<leader>fd", [[<cmd>Telescope live_grep<CR>]], { noremap = true, silent = true })
+
+--Set to share clipboard with system
+vim.opt.clipboard:append("unnamedplus")
